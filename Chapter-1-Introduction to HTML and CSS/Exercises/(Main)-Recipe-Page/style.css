@@ -1,0 +1,77 @@
+/*=====Header Style=====*/
+header {
+    background-color: #443627;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Container for general layout*/
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eee6bb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*Image container style*/
+.image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #443627;
+}
+
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding: 10px;
+
+}
+/*Caption for image*/
+figure img {
+    width: 250px;
+    height: 185px;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #D98324;
+    border-radius: 5px;
+}
+
+figcaption {
+    color: #525151;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/*=====Body Style=====*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebd18f;
+    color: #333;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #D98324;
+    margin: 20px 0;
+}
+
+.list-item-spacing li {
+    margin-bottom: 10px;
+}

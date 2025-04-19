@@ -1,0 +1,73 @@
+/*=====Global Reset=====*/
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+
+/*=====Header Style=====*/
+header {
+    background-color: #4F959D;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*=====Body & Heading Style=====*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(183, 224, 208);
+    color: #2f2f2f;
+    padding: 20px;
+}
+
+body h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*=====Section Style=====*/
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/*=====Article Style=====*/
+article {
+    background-color: #F6F8D5;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+article h3 {
+    font-size: 1.5em;
+}
+article p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/*=====Code Block Style=====*/
+pre {
+    background-color: #23303d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    padding: 5px;
+    display: block;
+}

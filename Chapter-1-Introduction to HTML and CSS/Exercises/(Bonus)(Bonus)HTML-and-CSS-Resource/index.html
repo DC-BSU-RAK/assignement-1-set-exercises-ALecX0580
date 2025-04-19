@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Resource</title>
+    <!--Linked to external stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header for Webpage-->
+    <header>HTML & CSS quick-reference</header>
+    <section>
+        <!--Sub-heading for HTML tags and description-->
+        <h2>HTML Tags</h2>
+        <p>Below are commonly used HTML tags</p>
+
+        <!--Each article presents an individual HTML tag and it's explanation-->
+        <article>
+            <h3>&lt;h1&gt; - Heading 1</h3>
+            <p>The &lt;h1&gt; tag is used for main heading of page. It goes from 1 to 6.</p>
+            <pre><code>&lt;h1&gt; This is heading 1&lt;/h1&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;p&gt; - Paragraph </h3>
+            <p>The &lt;p&gt; tag is used for paragraph of text.</p>
+            <pre><code>&lt;p&gt; This is paragraph&lt;/p&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;a&gt; - Anchor(Link)</h3>
+            <p>The &lt;a&gt; tag is used for making hyperlinks.</p>
+            <pre><code>&lt;a href="https://test.com"&gt;Visit example2&lt;/a&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;img&gt; - Image</h3>
+            <p>The &lt;p&gt; tag is used to embed an image. The image can be from website, or your folders.</p>
+            <pre><code>&lt;img src="https://test.jpg" alt="Example image"&gt;</code></pre>
+            <pre><code>&lt;img src="test.jpg" alt="Example image"&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;audio&gt; - Audio </h3>
+            <p>The &lt;audio&gt; tag is used to play audio .</p>
+<pre><code>&lt;audio controls&gt; 
+    &lt;source src="Test.ogg" type="audio/ogg"&gt;
+    &lt;source src="Test.mp3" type="audio/mpeg"&gt;
+    Browser does not support
+&lt;/audio&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;ul&gt; - Unordered List </h3>
+            <p>The &lt;ul&gt; tag is used for listing items with bullet symbols, and &lt;li&gt; defines list items &lt;/li&gt;.</p>
+<pre><code>&lt;ul&gt; 
+    &lt;li&gt;item 1&lt;/li&gt;
+    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;li&gt;item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;ol&gt; - Ordered List </h3>
+            <p>The &lt;ol&gt; tag is used for listing items with numeral, and &lt;li&gt; defines list items &lt;/li&gt;.</p>
+<pre><code>&lt;ol&gt; 
+    &lt;li&gt;item 1&lt;/li&gt;
+    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;li&gt;item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;form&gt; - Forms </h3>
+            <p>The &lt;form&gt; tag is used to create form for user input.</p>
+<pre><code>&lt;form&gt;
+    &lt;label for="firstname"&gt;First Name&lt;/label&gt;
+    &lt;input type="text" id="firstname" name="firstname"&gt;
+&lt;/form&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;div&gt; - Division </h3>
+            <p>The &lt;div&gt; tag is a container used for grouping elements.</p>
+<pre><code>&lt;div&gt;
+    &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;p&gt;Text within a div&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>&lt;link&gt; - Link </h3>
+            <p>The &lt;link&gt; tag is used to define relationships between current document and external resources like css.</p>
+            <pre><code>&lt;link rel="styelsheet" href="style.css"&gt;</code></pre>
+        </article>
+    </section>
+
+    <section>
+        <!--Sub-heading for CSS Properties-->
+        <h2>CSS Properties</h2>
+        <p>Some CSS properties used to style HTML elements</p>
+
+        <!--Each article explains a single CSS property with example-->
+        <article>
+            <h3>font-size</h3>
+            <p>The font-size property is used to set size of text.</p>
+            <pre><code>p { font-size: 24px; }</code></pre>
+        </article>
+
+        <article>
+            <h3>font-family</h3>
+            <p>The font-family property is used to set font family.</p>
+            <pre><code>p { font-family: Arial, sans-serif; }</code></pre>
+        </article>
+
+        <article>
+            <h3>color</h3>
+            <p>The color property is used to set color of text.</p>
+            <pre><code>p { color: red; }</code></pre>
+        </article>
+
+        <article>
+            <h3>background-color</h3>
+            <p>The background-color property is to set background color of an element.</p>
+            <pre><code>div { background-color: red; }</code></pre>
+        </article>
+
+        <article>
+            <h3>margin</h3>
+            <p>The margin property is to set space around elements.</p>
+            <pre><code>body { margin: 20px; }</code></pre>
+        </article>
+
+        <article>
+            <h3>padding</h3>
+            <p>The padding property is to set space inside elements.</p>
+            <pre><code>div { padding: 20px; }</code></pre>
+        </article>
+
+        <article>
+            <h3>border</h3>
+            <p>The border property is used to set border around elements.</p>
+            <pre><code>div { border: 1px solid black; }</code></pre>
+        </article>
+
+        <article>
+            <h3>display</h3>
+            <p>The display property is used to set how elements are displayed.</p>
+            <pre><code>div { display: block; }</code></pre>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/*=====Global Style=====*/
+* {
+    margin: 0;
+    padding: 0;
+    border-size: border-box;
+}
+
+html body {
+    height: 100%;
+    width: 100%;
+}
+/*=====Header Style=====*/
+header {
+    background-color: #0693e3;
+    padding: 24px;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/*Vertical Divider*/
+.vdivider {
+    width: 2px; 
+    height: 80px;
+    background-color: white; 
+    margin: 0 20px; 
+}
+
+/*Sonic Style*/
+.sonic {
+    color: yellow;
+    text-shadow: 2px 2px 0 darkblue;
+    font-size: 40px;
+    flex-grow: 1;
+    padding-left: 65px;
+}
+
+/*Hedgehog Style*/
+.hedgehog {
+    background-color: red;
+    box-shadow: 2px 2px 0 darkblue;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+/*=====Navigation Style=====*/
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: #e2e1e171;
+}
+
+/*=====Main Content Style=====*/
+main {
+    background-color: beige;
+    padding: 20px;
+}
+
+/*Section Style*/
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 55%;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgb(0, 0, 139);
+}
+
+section h2 {
+    background-color: #0693e3; 
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    margin: -20px -20px 15px -20px;
+    border-radius: 8px 8px;
+}
+
+section b {
+    font-size: 18px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 2;
+    color: black;
+    margin: 10px 0;
+}
+
+section ul {
+    padding-left: 30px;
+    line-height: 35px;
+}
+
+.reviews cite {
+    text-align: left;
+    font-size: 14px;
+    color: gray;
+}
+
+/*=====Button Style=====*/
+.button-container {
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    background-color: #3498db; 
+    color: white;
+    padding: 15px 30px; 
+    font-size: 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 15px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    position: relative;
+}
+
+/*Button Hover Animation*/
+.button:hover {
+    background-color: #2980b9; 
+    transform: translateY(-3px); 
+}
+
+/*=====Footer Style=====*/
+footer {
+    background-color: #0693e3;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
