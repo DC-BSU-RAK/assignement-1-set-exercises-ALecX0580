@@ -1,22 +1,28 @@
-/* =================================================================*/
-/* Global Style*/
+/*=====Global Style=====*/
 * {
     margin: 0;
     padding: 0;
-    border-size: border-box;
+    box-sizing: border-box;
 }
-
-html body {
+/*For taking up the whole page*/
+html, body {
     height: 100%;
     width: 100%;
 }
-/*----------------------------------------------------------------*/
-/* Header Style*/
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*=====Header Style=====*/
 header {
     background-color: #0693e3;
     padding: 24px;
     font-size: 28px;
-    font-family: SG-Sonic, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -24,7 +30,7 @@ header {
     gap: 15px;
 }
 
-/* Vertical Divider*/
+/*Vertical Divider*/
 .vdivider {
     width: 2px; 
     height: 80px;
@@ -32,7 +38,7 @@ header {
     margin: 0 20px; 
 }
 
-/* Sonic Style*/
+/*Sonic Style*/
 .sonic {
     color: yellow;
     text-shadow: 2px 2px 0 darkblue;
@@ -41,7 +47,7 @@ header {
     padding-left: 65px;
 }
 
-/* Hedgehog Style*/
+/*Hedgehog Style*/
 .hedgehog {
     background-color: red;
     box-shadow: 2px 2px 0 darkblue;
@@ -50,8 +56,7 @@ header {
     border-radius: 10px;
 }
 
-/*----------------------------------------------------------------*/
-/* Navigation Style*/
+/*=====Navigation Style=====*/
 nav ul {
     display: flex;
     justify-content: center;
@@ -77,14 +82,14 @@ nav ul li a:hover {
     background-color: #e2e1e171;
 }
 
-/*----------------------------------------------------------------*/
-/* Main Content Style*/
+/*=====Main Content Style=====*/
 main {
     background-color: beige;
     padding: 20px;
+    flex: 1;
 }
 
-/* Section Style*/
+/*Section Style*/
 section {
     font-family: Arial, Helvetica, sans-serif;
     background-color: aliceblue; 
@@ -126,8 +131,7 @@ section ul {
     color: gray;
 }
 
-/*----------------------------------------------------------------*/
-/* Button Style*/
+/*=====Button Style=====*/
 .button-container {
     display: flex; 
     justify-content: flex-end;
@@ -148,14 +152,13 @@ section ul {
     position: relative;
 }
 
-/* Button Hover Animation*/
+/*Button Hover Animation*/
 .button:hover {
     background-color: #2980b9; 
     transform: translateY(-3px); 
 }
 
-/*----------------------------------------------------------------*/
-/* Footer Style*/
+/*=====Footer Style=====*/
 footer {
     background-color: #0693e3;
     color: white;
