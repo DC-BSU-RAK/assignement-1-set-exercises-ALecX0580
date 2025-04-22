@@ -37,7 +37,7 @@ html, body {
 
 .avatar {
     font-family: "AvatarAirbender";
-    font-size: 112px;
+    font-size: 122px;
     font-weight: normal;
 }
 
@@ -53,9 +53,103 @@ html, body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("images/BG-AvatarMap.jpg");
+    background-image: url("images/BG-FourElementsAvatar.jpg");
     background-size: cover;
     background-position: center;
-    filter: blur(8px);
 }
 
+/*=====Container and Cards Styles=====*/
+.container {
+    margin: 50px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px;
+    padding: 30px;
+}
+/*Card Style*/
+.card {
+    background: rgba(255, 255, 255, 0.795);
+    border-radius: 20px;
+    border: 3px solid transparent;
+    width: 450px;
+    height: 600px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.822);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+/*Card size*/
+.card.katara, .card.sokka {
+    transform: scale(0.9);
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+/*Card Text Style*/
+.title {
+    font-size: 30px;
+}
+
+.description {
+    padding: 0 15px 20px 15px;
+    font-size: 14px;
+    color: darkslategray;
+}
+
+/*=====Card Hover Glow Effects=====*/
+/*Katara Card: water effect*/
+.card.katara:hover {
+    transform: translateY(-10px);
+    border-color: rgb(0, 174, 255);
+    animation: WaterGlow 2s infinite alternate;
+}
+
+@keyframes WaterGlow {
+    0%      {
+        box-shadow: 0 0 10px rgba(0, 110, 255, 0.4), 0 0 15px rgba(0, 110, 255, 0.3);
+    }
+    100%    {
+        box-shadow: 0 0 20px rgba(0, 70, 161, 0.6), 0 0 40px rgba(0, 70, 161, 0.5), 0 0 40px rgba(0, 70, 161, 0.4);
+    }   
+}
+
+/*Aang Card: air effect*/
+.card.aang:hover {
+    transform: translateY(-10px);
+    border-color: rgb(190, 235, 255);
+    animation: AirGlow 2s infinite alternate;
+}
+
+@keyframes AirGlow {
+    0%      {
+        box-shadow: 0 0 10px rgba(180, 182, 185, 0.4), 0 0 20px rgba(180, 182, 185, 0.3);
+    }
+    100%    {
+        box-shadow: 0 0 30px rgba(132, 181, 255, 0.8), 0 0 60px rgba(132, 181, 255, 0.6), 0 0 90px rgba(132, 181, 255, 0.4);
+    }   
+}
+
+/*Sokka Card: metal effect*/
+.card.sokka:hover {
+    transform: translateY(-10px);
+    border-color: gray;
+    animation: MetalGlow 2s infinite alternate;
+}
+
+@keyframes MetalGlow {
+    0%      {
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.4), 0 0 20px rgba(180, 182, 185, 0.3);
+    }
+    100%    {
+        box-shadow: 0 0 30px rgba(100, 100, 100, 0.8), 0 0 60px rgba(100, 100, 100, 0.6), 0 0 90px rgba(100, 100, 100, 0.4);
+    }   
+}
