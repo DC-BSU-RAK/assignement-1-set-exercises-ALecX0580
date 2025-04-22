@@ -1,0 +1,26 @@
+/*=====Div Recreation=====*/
+/*Div A*/
+div:nth-child(1) {
+    border-color: rgb(151, 0, 211);
+    box-shadow: 7px 7px 7px 1px red;
+}
+  
+/*Div B*/
+div:nth-child(2) {
+    border-color: rgb(0, 255, 0);
+    box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0);
+}
+
+/*Div C*/
+div:nth-child(3) {
+    border: 5px solid orange;
+    border-radius: 10%;
+    box-shadow: 0 0 0 10px blue, 0 0 0 20px red, 0 0 0 30px green;
+}
+
+/*Div D*/
+div:nth-child(4) {
+    color: black;
+    text-shadow: 5px 5px 1px black;
+    border-color: brown;
+  }
