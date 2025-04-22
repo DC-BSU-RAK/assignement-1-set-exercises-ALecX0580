@@ -1,5 +1,61 @@
+/*=====Global Style=====*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Full page size*/
+html, body {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*=====Font import for Main Title=====*/
+@font-face {
+    font-family: "AvatarAirbender";
+    src: url("fonts/Avatar-Airbender.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "HerculanumLTProRoman";
+    src: url("fonts/HerculanumLTProRoman.TTF") format("truetype");
+}
+
+
+/*=====Main Title=====*/
+.main-title {
+    font-size: 48px;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    font-family: "AvatarAirbender";
+    font-size: 112px;
+    font-weight: normal;
+}
+
+.last-airbender {
+    font-family: "HerculanumLTProRoman";
+    font-size: 42px;
+    font-weight: normal;
+}
+
+/*=====Background=====*/
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("images/BG-AvatarMap.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+}
+
